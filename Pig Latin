@@ -1,0 +1,23 @@
+"""
+You have two friends who are speaking 
+Pig Latin to each other! Pig Latin is the 
+same words in the same order except that 
+you take the first letter of each word 
+and put it on the end, then you add 'ay' 
+to the end of that. ("road" = "oadray") 
+
+Task
+Your task is to take a sentence in English 
+and turn it into the same sentence in 
+Pig Latin! 
+"""
+
+sentence = input()
+words = sentence.split(" ")
+phrase = ""
+
+for word in words:
+    piglatin = f"{word[1:]}{word[0]}ay"
+    phrase = phrase + " " + piglatin
+    
+print(phrase)
